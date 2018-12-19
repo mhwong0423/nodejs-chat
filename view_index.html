@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    
+	    <title>LiveChat</title>
+
+    	<!-- css -->
+    	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="http://137.189.47.43/assets/css/frontend.css" rel="stylesheet" id="bootstrap-css">
+		
+		
+		<!-- js -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    	<script src="http://137.189.47.43/assets/js/frontend.js"></script>
+	</head>
+
+   	<body>
+   		<!-- main container -->
+		<div class="container">
+			<h3 class=" text-center">LiveChat</h3>
+			<!-- invisible session ID -->
+			<input type="text" id="session_id" value="%SessionID%" />
+
+			<!-- chat message container -->
+			<div class="messaging">
+
+				<div class="inbox_msg">
+			        
+			        <div class="mesgs">
+			        	<!-- message history container, messages appended by frontend.js -->
+			            <div class="msg_history">
+
+			            </div> <!-- message history container -->  
+
+			            <!-- input pane -->
+			            <div class="type_msg">
+			               <div class="input_msg_write">
+			                  <input type="text" class="write_msg" placeholder="Type a message" />
+			                  <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+			               </div>
+			            </div> <!-- end of input pane -->
+
+			        </div> <!-- mesgs -->
+		        </div> <!-- inbox_msg -->
+
+	        </div> <!-- end of chat message container -->
+	    </div> <!-- end of main container -->
+
+	    
+    </body>
+</html>

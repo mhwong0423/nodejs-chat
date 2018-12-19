@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://137.189.47.43/assets/css/login.css">
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    </head>
+
+
+    <body>
+        <!-- main container -->
+        <div class="container">
+            <div class="card card-container">
+                <img id="profile-img" class="profile-img-card" src="http://137.189.47.43/assets/img/technician-pic.png" />
+                <p id="profile-name" class="profile-name-card">LiveChat</p>
+                <!-- login form through POST method-->
+                <form class="form-signin" method="POST" action="post_login">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="input" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+                    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+                    
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+
+                    <!-- error message appears if wrong username or password -->
+                    <span id="errormsg" style="display:none; color:red;">Wrong username or password</span>
+                </form><!-- end of form -->
+            </div><!-- end of card-container -->
+        </div><!-- end of container -->
+
+    </body>
+
+</html>
